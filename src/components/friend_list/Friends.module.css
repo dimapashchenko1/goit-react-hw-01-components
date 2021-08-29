@@ -1,0 +1,42 @@
+.item {
+  margin-bottom: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px #000000;
+}
+.friends {
+  width: 300px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 25px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  padding: 5px;
+  margin-right: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.name {
+  font-weight: bold;
+}

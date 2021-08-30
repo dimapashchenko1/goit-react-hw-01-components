@@ -8,8 +8,9 @@ export default function FriendList({ friends = [] }) {
         return (
           <li className={css.item} key={friend.id}>
             <span
-              className={css.status}
-              style={{ backgroundColor: getOnlineStatus(friend.isOnline) }}
+              className={`${css.status} ${
+                friend.isOnline ? css.isOnline : css.isOfline
+              }`}
             ></span>
             <img
               className={css.avatar}
@@ -35,9 +36,3 @@ FriendList.propTypes = {
     }),
   ).isRequired,
 };
-
-function getOnlineStatus(status) {
-  let color = '';
-  status ? (color = 'green') : (color = 'red');
-  return color;
-}

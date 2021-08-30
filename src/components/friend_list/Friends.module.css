@@ -27,6 +27,13 @@
   border-radius: 50px;
   margin-right: 25px;
 }
+.isOfline {
+  background-color: rgb(255, 30, 0);
+}
+
+.isOnline {
+  background-color: rgb(7, 197, 7);
+}
 
 .avatar {
   width: 55px;
